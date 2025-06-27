@@ -4,18 +4,14 @@ Sistem manajemen parkir untuk gedung 3 lantai, dilengkapi login pengguna (gate e
 
 > 3 lantai parkir:
     - Lantai 1: motor
-
     - Lantai 2–3: mobil & bus
 > Otomatisasi alokasi slot parkir
 > Perhitungan biaya parkir per jam:
     - Motor: Rp 2.000/jam
-
     - Mobil: Rp 4.000/jam
-    
     - Bus: Rp 6.000/jam
 >  Role-based login:
     - ENTRY_GATE
-
     - EXIT_GATE
 >  Cek status slot parkir real-time
 >  Backend: Spring Boot + H2 DB (in-memory)
@@ -74,7 +70,6 @@ parking-system/
 
 A.) Cara menjalankan:
 > Ubah di RetrofitClient.java:
-
   private static final String BASE_URL = "http://10.0.2.2:8080/";
 
 > Build APK
