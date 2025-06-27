@@ -2,20 +2,20 @@
 
 Sistem manajemen parkir untuk gedung 3 lantai, dilengkapi login pengguna (gate entry/exit), alokasi slot otomatis, dan perhitungan biaya berbasis durasi. Backend menggunakan Spring Boot, dan frontend berupa aplikasi Android.
 
--  3 lantai parkir:
-  - Lantai 1: motor
-  - Lantai 2–3: mobil & bus
--  Otomatisasi alokasi slot parkir
--  Perhitungan biaya parkir per jam:
-  - Motor: Rp 2.000/jam
-  - Mobil: Rp 4.000/jam
-  - Bus: Rp 6.000/jam
--  Role-based login:
-  - ENTRY_GATE
-  - EXIT_GATE
--  Cek status slot parkir real-time
--  Backend: Spring Boot + H2 DB (in-memory)
--  Frontend: Android App (Retrofit + Fragment)
+> 3 lantai parkir:
+    - Lantai 1: motor
+    - Lantai 2–3: mobil & bus
+> Otomatisasi alokasi slot parkir
+> Perhitungan biaya parkir per jam:
+    - Motor: Rp 2.000/jam
+    - Mobil: Rp 4.000/jam
+    - Bus: Rp 6.000/jam
+>  Role-based login:
+    - ENTRY_GATE
+    - EXIT_GATE
+>  Cek status slot parkir real-time
+>  Backend: Spring Boot + H2 DB (in-memory)
+>  Frontend: Android App (Retrofit + Fragment)
 
 **BACKEND**:
 
@@ -41,18 +41,17 @@ parking-system/
 
 
  B.) Cara Menjalankan Proyek
-
-cd backend
-mvn spring-boot:run
+     cd backend
+     mvn spring-boot:run
 
 
  C.) ENDPOINT
   
 | Endpoint        | Method | Keterangan               |
 | --------------- | ------ | ------------------------ |
-| `/entry/park`   | POST   | Input kendaraan masuk    |
-| `/exit/leave`   | POST   | Kendaraan keluar & bayar |
-| `/slots/status` | GET    | Lihat status slot        |
+| /entry/park     | POST   | Input kendaraan masuk    |
+| /exit/leave     | POST   | Kendaraan keluar & bayar |
+| /slots/status   | GET    | Lihat status slot        |
 
 
 
@@ -60,9 +59,9 @@ mvn spring-boot:run
    
 | Username | Password | Role        |
 | -------- | -------- | ----------- |
-| `entry`  | `123`    | ENTRY\_GATE |
-| `exit1`  | `123`    | EXIT\_GATE  |
-| `exit2`  | `123`    | EXIT\_GATE  |
+| entry    | 123      | ENTRY\_GATE |
+| exit1    | 123      | EXIT\_GATE  |
+| exit2    | 123      | EXIT\_GATE  |
 
 
 
@@ -86,8 +85,8 @@ B.) FITUR:
 
 
 **UNIT TESTING:**
-Menggunakan Spring Boot Test (@SpringBootTest)
-File contoh: ParkingServiceTest.java
+   Menggunakan Spring Boot Test (@SpringBootTest)
+   File contoh: ParkingServiceTest.java
 
 
 
